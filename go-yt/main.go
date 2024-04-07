@@ -1,13 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func main() {
 	// fmt.Println("Hello, World!")
 
-	var name string = "shreyas"
+	// var name string = "shreyas"
 
-	fmt.Println("Hello, " + name + "!")
+	// fmt.Println("Hello, " + name + "!")
 
 	version := "version 1.0"
 
@@ -38,18 +42,28 @@ func main() {
 
 	// print
 
-	age := 22
-	name = "shreyas"
+	// age := 22
+	// name = "shreyas"
 
-	fmt.Println("Hello, ", name, "!", "You are ", age, " years old.")
+	// fmt.Println("Hello, ", name, "!", "You are ", age, " years old.")
 
 	// print using format specifier
 
-	fmt.Printf("Hello, %v! You are %v years old.\n", name, age)
+	// fmt.Printf("Hello, %v! You are %v years old.\n", name, age)
 
 	// %v is used to print the value of the variable
 	// %T is used to print the type of the variable
 	// %f is used to print the float value - %.3f is used to print the float value upto 3 decimal places
 	// %d is used to print the integer value
 	// %s is used to print the string value
+
+	// how to take input from the user
+
+	fmt.Println("Enter your name: ")
+
+	reader := bufio.NewReader(os.Stdin)
+
+	name, _ := reader.ReadString('\n')
+
+	fmt.Println("Hello, " + name + "!")
 }
