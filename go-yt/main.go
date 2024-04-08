@@ -1,9 +1,9 @@
 package main
 
 import (
-	"bufio"
+	// "bufio"
 	"fmt"
-	"os"
+	// "os"
 )
 
 func main() {
@@ -13,32 +13,32 @@ func main() {
 
 	// fmt.Println("Hello, " + name + "!")
 
-	version := "version 1.0"
+	// version := "version 1.0"
 
-	fmt.Println(version)
+	// fmt.Println(version)
 
-	var dimension float64 = 22.22
+	// var dimension float64 = 22.22
 
-	fmt.Println(dimension)
+	// fmt.Println(dimension)
 
-	var decided bool = true
+	// var decided bool = true
 
-	fmt.Println(decided)
+	// fmt.Println(decided)
 
-	const pi = 3.14
+	// const pi = 3.14
 	// pi = 3.15 // cannot assign to pi
-	fmt.Println(pi)
+	// fmt.Println(pi)
 
 	// var persion string = "shreyas bole"
-	persion := "shreyas bole"
-	fmt.Println(persion)
+	// persion := "shreyas bole"
+	// fmt.Println(persion)
 
 	// capital letter is public is accessible outside the package and small letter is private and not accessible outside the package
-	Public := "data is important"
-	private := "data is private"
+	// Public := "data is important"
+	// private := "data is private"
 
-	fmt.Println(Public)
-	fmt.Println(private)
+	// fmt.Println(Public)
+	// fmt.Println(private)
 
 	// print
 
@@ -59,11 +59,28 @@ func main() {
 
 	// how to take input from the user
 
-	fmt.Println("Enter your name: ")
+	// fmt.Println("Enter your name: ")
 
-	reader := bufio.NewReader(os.Stdin)
+	// reader := bufio.NewReader(os.Stdin)
 
-	name, _ := reader.ReadString('\n')
+	// name, _ := reader.ReadString('\n')
 
-	fmt.Println("Hello, " + name + "!")
+	// fmt.Println("Hello, " + name + "!")
+
+	// Functions in Go
+
+	fmt.Println("Hello, World!")
+
+	simpleFunction()
+
+	ans := add(2, 3)
+	fmt.Println(ans)
+}
+
+func simpleFunction() {
+	fmt.Println("This is a simple function")
+}
+
+func add(a int, b int) (result int) {
+	return a + b
 }
