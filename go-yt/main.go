@@ -85,16 +85,39 @@ import "fmt"
 // 	return a + b
 // }
 
-func divide(a, b float64) (float64, error) {
-	if b == 0 {
-		return 0, fmt.Errorf("cannot divide by zero")
-	}
-	return a / b, nil
-}
+// func divide(a, b float64) (float64, error) {
+// 	if b == 0 {
+// 		return 0, fmt.Errorf("cannot divide by zero")
+// 	}
+// 	return a / b, nil
+// }
+
+// func main() {
+// 	fmt.Println("Hello, World!")
+
+// 	ans, _ := divide(10, 4)
+// 	fmt.Println(ans)
+// }
+
+// Arrays in Go
 
 func main() {
 	fmt.Println("Hello, World!")
 
-	ans, _ := divide(10, 4)
-	fmt.Println(ans)
+	// var name [5]string
+
+	// name[0] = "shreyas"
+	// name[2] = "bole"
+
+	// fmt.Println(name)
+
+	// fmt.Println("Length of the array is: ", len(name))
+
+	// fmt.Println("First element of the array is: ", name[2])
+
+	// Default value of int,float is 0 , for string is " " , for bool is false for pointers or complex type is nil
+
+	var price [5]int
+
+	fmt.Println("price array is: ", price)
 }
