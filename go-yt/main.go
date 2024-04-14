@@ -101,23 +101,32 @@ import "fmt"
 
 // Arrays in Go
 
+// func main() {
+// 	fmt.Println("Hello, World!")
+
+// var name [5]string
+
+// name[0] = "shreyas"
+// name[2] = "bole"
+
+// fmt.Println(name)
+
+// fmt.Println("Length of the array is: ", len(name))
+
+// fmt.Println("First element of the array is: ", name[2])
+
+// Default value of int,float is 0 , for string is " " , for bool is false for pointers or complex type is nil
+
+// var price [5]int
+
+// fmt.Println("price array is: ", price)
+// }
+
+// Slices in Go
+
 func main() {
-	fmt.Println("Hello, World!")
-
-	// var name [5]string
-
-	// name[0] = "shreyas"
-	// name[2] = "bole"
-
-	// fmt.Println(name)
-
-	// fmt.Println("Length of the array is: ", len(name))
-
-	// fmt.Println("First element of the array is: ", name[2])
-
-	// Default value of int,float is 0 , for string is " " , for bool is false for pointers or complex type is nil
-
-	var price [5]int
-
-	fmt.Println("price array is: ", price)
+	numbers := []int{1, 2, 3, 4, 5}
+	numbers = append(numbers, 6)
+	fmt.Println(numbers)
+	fmt.Println("Length of the slice is: ", len(numbers))
 }
